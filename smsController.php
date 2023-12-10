@@ -25,9 +25,9 @@ class SmsController extends Controller
     public function processSendSms(){
         if(!empty($this->mobile_numbers) and !empty($this->message_body)){
             $data = [
-                'apikey' => "06e80c43462e998f",
-                'secretkey' => "3733d087",
-                'callerID' => '8809612448803',
+                'apikey' => "your_api_key",
+                'secretkey' => "your_secret_key",
+                'callerID' => 'cllaerID',
                 'toUser' => implode(",",$this->mobile_numbers),
                 'messageContent' => $this->message_body,
             ];
